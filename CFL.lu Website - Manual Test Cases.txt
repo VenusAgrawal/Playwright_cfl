@@ -1,0 +1,328 @@
+CFL.lu Website - Manual Test Cases
+1. Homepage & Navigation
+TC-001: Homepage Load
+
+Navigate to www.cfl.lu
+Verify homepage loads successfully within 3 seconds
+Check all main navigation menus are visible (Timetables, Tickets, Network, Services, etc.)
+Verify language selector is present (FR, DE, EN, LU)
+
+TC-002: Language Switching
+
+Click on each language option (French, German, English, Luxembourgish)
+Verify content changes to selected language
+Check that URL reflects language change (e.g., /en-gb, /fr-fr)
+Verify all page elements translate correctly
+
+TC-003: Main Navigation Menu
+
+Hover over each main menu item
+Verify dropdown menus appear (if applicable)
+Click each menu option
+Verify correct page loads
+
+
+2. Timetable & Journey Planning
+TC-004: Basic Journey Search
+
+Select departure station (e.g., "Luxembourg")
+Select arrival station (e.g., "Esch/Alzette")
+Select current date and time
+Click search/submit button
+Verify search results display with train times, duration, and connections
+
+TC-005: Journey Search with Date/Time Selection
+
+Enter departure and arrival stations
+Select future date using date picker
+Select specific departure time
+Verify results show journeys from selected time onwards
+
+TC-006: Swap Stations Function
+
+Enter departure and arrival stations
+Click swap/reverse button
+Verify stations are swapped correctly
+
+TC-007: Station Autocomplete
+
+Start typing station name in departure field (e.g., "Luxe...")
+Verify autocomplete suggestions appear
+Select station from dropdown
+Verify station is correctly populated
+
+TC-008: Invalid Station Search
+
+Enter non-existent station name
+Click search
+Verify appropriate error message is displayed
+
+TC-009: View Journey Details
+
+Perform a journey search
+Click on a specific journey result
+Verify detailed information displays (intermediate stops, platform numbers, train types)
+
+
+3. Ticket Booking
+TC-010: Online Ticket Purchase - Standard Ticket
+
+Navigate to ticket booking section
+Select journey details
+Choose ticket type (2nd class adult single)
+Add to cart
+Verify cart displays correct ticket and price
+
+TC-011: Ticket Types Selection
+
+Access ticket booking
+Verify availability of different ticket types (single, return, 1st class, 2nd class)
+Select each ticket type
+Verify price updates accordingly
+
+TC-012: Multiple Passenger Booking
+
+Start ticket booking
+Add multiple passengers (adults, children, seniors)
+Verify passenger count and total price updates correctly
+
+TC-013: International Ticket Booking
+
+Search for international journey (e.g., Luxembourg to Paris)
+Verify international tickets are available
+Check if seat reservation option appears for TGV trains
+
+TC-014: Payment Process
+
+Add ticket to cart
+Proceed to checkout
+Verify payment options are displayed (credit card, PayPal, etc.)
+Fill in payment details (use test data)
+Verify SSL/secure connection indicator
+
+TC-015: Booking Confirmation
+
+Complete a booking (in test environment)
+Verify confirmation page displays
+Check booking reference number is provided
+Verify confirmation email is sent
+
+
+4. Station Information
+TC-016: Station Search
+
+Navigate to Network/Stations section
+Search for specific station (e.g., "Luxembourg")
+Verify station page loads with complete information
+
+TC-017: Station Details Display
+
+Open station page
+Verify the following information is displayed:
+
+Address and GPS coordinates
+Opening hours
+Available services (ticket office, waiting room, parking, bike facilities)
+Accessibility features
+Map/location
+
+
+
+TC-018: Station Map Interaction
+
+Access station map
+Accept Google Maps cookie consent
+Verify map loads correctly
+Test zoom in/out functionality
+Verify station location is marked correctly
+
+TC-019: Park + Ride Information
+
+Select station with Park + Ride facility
+Verify parking information is displayed (rates, spaces, app link)
+Check link to Park + Ride app
+
+
+5. Mobile Apps Section
+TC-020: CFL Mobile App Information
+
+Navigate to apps section
+Verify information about CFL mobile app is displayed
+Check download links for iOS and Android
+Verify links direct to correct app stores
+
+TC-021: CFL International App
+
+Access international app information
+Verify app description and features
+Test download links
+
+TC-022: Park + Ride App
+
+Navigate to Park + Ride app section
+Verify app information and benefits
+Test download links
+
+
+6. Services & Mobility Solutions
+TC-023: Flex Carsharing Information
+
+Navigate to Flex carsharing section
+Verify service description is clear
+Check how to register/use information
+Test any external links to Flex platform
+
+TC-024: Bike Services
+
+Access bike facilities information
+Verify bike tour routes are listed (Tour H, I, J, K, L)
+Check CFL Trail information (Trail 19, 20, 37)
+Test downloadable route maps if available
+
+TC-025: Accessibility Services (EureWelcome)
+
+Navigate to accessibility information
+Verify information for passengers with reduced mobility
+Check list of accessible stations
+Test EureWelcome app link
+
+
+7. Special Offers & News
+TC-026: Current Promotions
+
+Navigate to offers/special deals section
+Verify current promotions are displayed (e.g., Advent calendar mentioned)
+Check offer details and validity dates
+Test "Learn more" links
+
+TC-027: City Trips Section
+
+Access city trips/travel packages
+Verify destination information is displayed
+Check booking options
+
+
+8. Footer & Legal Pages
+TC-028: Cookie Consent Banner
+
+Clear browser cookies
+Reload website
+Verify cookie consent banner appears
+Test "Accept all," "Reject all," and "Cookie settings" options
+Verify choices are saved
+
+TC-029: Cookie Settings Management
+
+Click "Cookie settings" link in footer
+Verify different cookie categories are shown (essential, analytics, etc.)
+Toggle cookie preferences
+Save settings and verify they persist
+
+TC-030: Contact Information
+
+Navigate to contact page
+Verify contact details are displayed (phone, email, address)
+Test contact form if available
+Verify form validation (required fields, email format)
+
+TC-031: Privacy Policy
+
+Access privacy policy page
+Verify document loads completely
+Check it's up to date with current regulations
+
+TC-032: Terms & Conditions
+
+Navigate to terms and conditions
+Verify complete document is accessible
+Check readability and completeness
+
+
+9. Responsive Design & Cross-Browser Testing
+TC-033: Mobile Responsiveness
+
+Access website on mobile device (or use browser dev tools)
+Verify layout adjusts appropriately
+Test navigation menu (hamburger menu)
+Verify all functions work on mobile
+
+TC-034: Tablet View
+
+Access website on tablet device
+Verify layout is optimized for tablet screen size
+Test touch interactions
+
+TC-035: Browser Compatibility - Chrome
+
+Open website in Google Chrome
+Test all major functions
+Verify no console errors
+
+TC-036: Browser Compatibility - Firefox
+
+Repeat TC-035 in Firefox browser
+
+TC-037: Browser Compatibility - Safari
+
+Repeat TC-035 in Safari browser
+
+TC-038: Browser Compatibility - Edge
+
+Repeat TC-035 in Microsoft Edge
+
+
+10. Performance & Security
+TC-039: Page Load Performance
+
+Use browser dev tools or PageSpeed Insights
+Measure page load time for homepage
+Verify acceptable load time (<3 seconds)
+
+TC-040: SSL Certificate
+
+Check website URL uses HTTPS
+Verify SSL certificate is valid and not expired
+Check secure connection indicator in browser
+
+TC-041: External Links
+
+Identify all external links on homepage
+Click each external link
+Verify links open in new tab
+Confirm destination is correct and secure
+
+TC-042: PDF Downloads
+
+Locate downloadable PDFs (timetables, maps, etc.)
+Click download links
+Verify PDFs download successfully and open correctly
+
+
+11. Search Functionality
+TC-043: Global Site Search
+
+Locate site search function (if available)
+Enter search query (e.g., "parking")
+Verify relevant results are displayed
+Test search with special characters
+
+
+12. Error Handling
+TC-044: 404 Page
+
+Navigate to non-existent URL (e.g., www.cfl.lu/nonexistent)
+Verify custom 404 error page displays
+Check navigation options to return to site
+
+TC-045: Form Validation
+
+Access any form on the website
+Submit without filling required fields
+Verify appropriate error messages display
+Test with invalid data formats (e.g., wrong email format)
+
+TC-046: Network Disruption
+
+Navigate to a page
+Disable internet connection mid-load
+Verify appropriate error message or offline indicator
